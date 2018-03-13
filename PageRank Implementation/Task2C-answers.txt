@@ -1,0 +1,98 @@
+Task 2 C
+
+i) Damping factor basically represents a chance that a user will stop clicking page links on current page and will go to some other random page. It is usually set to 0.85 which means that there is a 15% chance that a user would stop following links and would just go to a random page.So when the damping factor is 0.55, there is a 45% chance that a user would go to a random page rather following the links
+After changing the damping factor to 0.55 from 0.85, the following observations were made:-
+1) The PageRank of pages changed thus when sorted by PageRank, the results were different. 
+2) PageRank values of top results in case of d = 0.55, were in general less than PageRank Values of top results when d = 0.85
+
+Top 5 pages by PageRanks, when d = 0.85
+('Wayback_Machine', 0.02334062871525251)
+('International_Standard_Book_Number', 0.019722763970817188)
+('Integrated_Authority_File', 0.018259921004746122)
+('Sun', 0.016612436709490145)
+('Digital_object_identifier', 0.015281740841852473)
+
+Top 5 pages by PageRanks, when d = 0.55
+('International_Standard_Book_Number', 0.013420326050295368)
+('Wayback_Machine', 0.01017202016564214)
+('Digital_object_identifier', 0.009617684101149044)
+('Integrated_Authority_File', 0.009471995286997765)
+('Sun', 0.00847603242803149)
+
+
+3) Perplexity values are higher when damping factor is low(i.e. d = 0.55)
+4) No. of iterations are less when damping factor is 0.55 as compared to number of iterations when d = 0.85
+
+Iterations with perplexity, when d = 0.55(Start with iteration 0)
+0
+867.2584378194898
+858.5999817764797
+851.1907833439926
+849.1487301994741
+848.7858374910304
+848.7374132335073
+848.6834306472236
+
+Perplexity with iterations, when d = 0.85(Start with iteration 0)
+0
+736.1751598140967
+709.5279567002252
+679.9094330480721
+666.8456003818687
+663.0765495579876
+662.3255028836386
+661.1458327449786
+659.9758397800609
+658.8999259246335
+657.9691698719039
+657.2060775288799
+656.5868742594919
+
+
+ii) On analyzing the results for less than 4 iterations and exactly 4 iterations:-
+
+1) Final PageRank values for them are different. The difference is miniscule but PageRank values for exactly 4 iterations are a little higher than PageRank values for less than or equal to four iterations. This doesn't make a difference in ranking in this case as the no. of pages are 1000 but when we have billions of pages, this would make a lot of difference.
+
+2) In case of "exactly four iterations", the number of iterations for perplexity values is one less than the number of iterations for "less than or equal to four iterations". This leads to a quicker convergence(one perplexity value less) as in case of "exactly four iterations" compared to "less than or equal to four iterations".
+
+
+iii) 
+Top 10 documents by PageRank:-
+('Wayback_Machine', 0.0233747168591572)
+('International_Standard_Book_Number', 0.019743708675494683)
+('Integrated_Authority_File', 0.018283451296946647)
+('Sun', 0.01663409599548653)
+('Digital_object_identifier', 0.01529903441832043)
+('NASA', 0.014633612032349632)
+('Library_of_Congress_Control_Number', 0.013159919888151812)
+('Bibcode', 0.00911316546841682)
+('National_Diet_Library', 0.007109900786695013)
+('PubMed_Identifier', 0.006387877840272631)
+
+Top 10 documents by Inlink Count:-
+('Solar_eclipse', 714)
+('Sun', 619)
+('Solar_eclipses_on_the_Moon', 599)
+('Earth', 569)
+('Eclipse', 568)
+('Moon', 558)
+('Transit_(astronomy)', 532)
+('Solar_eclipse_of_August_11,_1999', 530)
+('Saros_(astronomy)', 526)
+('Solar_eclipse_of_August_21,_2017', 525)
+
+
+On comparing top 10 documents ranked by inlinks count and PageRank, we see that the results are very different. Solar_eclipse having the most inlinks tops the inlink ranking while Wayback_Machine tops the PageRank ranking(inspite of having way lesser inlinks). This shows that PageRank takes many other things into account apart from the count of inlinks
+
+Pros:
+
+1) PageRanks takes inlinks into account while ranking the pages but it also factors the popularity of the page. While this results in good results, at times, pages with relevant content and good number of inlinks are left out as they might not be as popular.
+As good results are relative to people, people looking for content in these pages with high inlinks and low popularity might not get relevant results. Therefore inlink ranking would be more apt in such a scenario.
+
+2) Inlink ranking ranks the pages by the number of links pointing to them. So it is better in case of a full connect network where all the pages are connected to each other as it would rank the most important pages first. However due to the damping factor in PageRank, the crawler might jump to a page which would not have as many inlinks. Now PageRank's algorithm is applicable on the world wide web but for a small network, inlink ranking would be better
+
+Cons:
+
+1) As ranking by number of inlinks does not take into account those pages which do not point towards anything (sink) or loop pages, it wouldn't include pages with are not connected to the current network of pages the crawler is at.
+
+2) Inlinks ranking only take the number of inlinks into account, not the popularity, which means it might not return popular pages with comparitively less inlinks which might result in irrelevant results to a lot of user.

@@ -1,0 +1,9 @@
+For G1
+
+Sources 0
+Sink Pages:  3
+
+For G2
+
+Sources 0
+Sink Pages:  0

@@ -1,0 +1,3 @@
+Keyword Variation
+
+To handle keyword variation in task 2, I have performed a case insensitive search. I did this by converting URLs and Anchors to upper case and lower case and comparing them to the keywords. I also used "in" in python to check whether a key exists in a url or an anchor.

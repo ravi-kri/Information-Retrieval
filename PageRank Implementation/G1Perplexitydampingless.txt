@@ -1,0 +1,10 @@
+Perplexity for G1(damping 0.55):-
+
+Perplexity in this iteration 867.2584378194898
+Perplexity in this iteration 858.5999817764797
+Perplexity in this iteration 851.1907833439926
+Perplexity in this iteration 849.1487301994741
+Perplexity in this iteration 848.7858374910304
+Perplexity in this iteration 848.7374132335073
+Perplexity in this iteration 848.6834306472236
+Perplexity in this iteration 848.6485239799939

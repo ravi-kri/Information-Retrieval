@@ -1,0 +1,30 @@
+Perplexity for G1:-
+
+Perplexity in this iteration 736.1751598140967
+Perplexity in this iteration 709.5279567002252
+Perplexity in this iteration 679.9094330480721
+Perplexity in this iteration 666.8456003818687
+Perplexity in this iteration 663.0765495579876
+Perplexity in this iteration 662.3255028836386
+Perplexity in this iteration 661.1458327449786
+Perplexity in this iteration 659.9758397800609
+Perplexity in this iteration 658.8999259246335
+Perplexity in this iteration 657.9691698719039
+Perplexity in this iteration 657.2060775288799
+Perplexity in this iteration 656.5868742594919
+Perplexity in this iteration 656.0860144620796
+
+Perplexity for G2:-
+
+Perplexity in this iteration 626.8302571583371
+Perplexity in this iteration 635.6240488453316
+Perplexity in this iteration 608.5465178225033
+Perplexity in this iteration 595.7977990972621
+Perplexity in this iteration 588.3968694127989
+Perplexity in this iteration 584.0954170299595
+Perplexity in this iteration 581.5424002374456
+Perplexity in this iteration 580.0024943855799
+Perplexity in this iteration 579.0602721312071
+Perplexity in this iteration 578.4773707407649
+Perplexity in this iteration 578.1134459088862
+Perplexity in this iteration 577.8844980404908

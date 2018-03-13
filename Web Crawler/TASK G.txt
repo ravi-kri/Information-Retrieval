@@ -1,0 +1,39 @@
+TASK G
+
+Following are the first 10 URLs retrieved by BFS search and DFS search:-
+
+URL overlap:
+First 10 URLS of BFS:-
+1) https://en.wikipedia.org/wiki/Solar_eclipse
+2) https://en.wikipedia.org/wiki/Eclipse_of_the_Sun_(film)
+3) https://en.wikipedia.org/wiki/Eclipse_of_the_Sun_(novel)
+4) https://en.wikipedia.org/wiki/Solar_eclipse_of_August_11,_1999
+5) https://en.wikipedia.org/wiki/Solar_prominence
+6) https://en.wikipedia.org/wiki/Corona
+7) https://en.wikipedia.org/wiki/Solar_eclipse_of_May_20,_2012
+8) https://en.wikipedia.org/wiki/Solar_eclipse_of_October_23,_2014
+9) https://en.wikipedia.org/wiki/Earth
+10) https://en.wikipedia.org/wiki/Eclipse
+
+First 10 URLS for DFS:-
+1) https://en.wikipedia.org/wiki/Solar_eclipse
+2) https://en.wikipedia.org/wiki/Eclipse_of_the_Sun_(film)
+3) https://en.wikipedia.org/wiki/Luis_Saslavsky
+4) https://en.wikipedia.org/wiki/Argentina
+5) https://en.wikipedia.org/wiki/Argentina_(disambiguation)
+6) https://en.wikipedia.org/wiki/Argentina,_Santiago_del_Estero
+7) https://en.wikipedia.org/wiki/Strasbourg
+8) https://en.wikipedia.org/wiki/Argentina_(river)
+9) https://en.wikipedia.org/wiki/Argentina_(plant)
+10) https://en.wikipedia.org/wiki/Argentina_(fish)
+
+As it can be noticed, only the first two links are common in BFS crawled list and DFS crawled list. This is because the second link is obtained by crawling the seed link and the first link is the seed link. After that, results of BFS and DFS are completely different
+
+Coverage of the crawl topic:
+BFS obtained much more relevant results compared to DFS as BFS stays on the seed page and obtains all the URLs from there before going to the next depth. There are higher chances of links being relevant to the topic on the seed page compared to any other page.
+On the other hand, DFS keeps going deeper with every link and thus as depth increases, links get more and more irrelevant and disassociated to the crawl topic.
+
+In this case, as we can see, the top 10 links by BFS are much more relevant to Solar Eclipse as compared to the top 10 links by DFS.
+
+Perceived Quality and Efficiency Aspect:
+BFS(Breadth First Search) took 30 minutes to crawl 1000 links till depth 6 and DFS(Depth First Search) took 39 minutes to crawl 1000 links till depth 6.Results of BFS were of much more relevance to the crawl topic. Thus, the quality of results by BFS were much better and it is much more efficient than DFS in this case.
